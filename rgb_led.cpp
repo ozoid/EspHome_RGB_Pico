@@ -42,12 +42,13 @@
 namespace esphome{
     namespace rgb_led{
         static Patterns patterns;
-        static const char *TAG = "rgb_led";
+        static const char* TAG = "rgb_led";
         void RGBLEDOutput::setup() {
             stdio_init_all();
             initGPIO();
             initPIO();    // for led control
             initI2C();  
+            ESP_LOGI(TAG,"RGB LED Setup Complete.");
         }
         void RGBLEDOutput::loop() {
           //  output_->publish_state(3.0);
