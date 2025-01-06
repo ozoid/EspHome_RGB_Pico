@@ -31,7 +31,7 @@ web_server:
 external_components:
   - source:
       type: git
-      url: https://github.com/ozoid/EspHome_RGB_Pico.git
+      url: https://github.com/ozoid/EspHome_RGB_Pico
       ref: master
     refresh: 0s
-  components: [rgb_led]  
+    components: [rgb_led]
